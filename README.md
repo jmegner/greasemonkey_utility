@@ -1,2 +1,2 @@
-# greasemonkey_utility
-utility functions for greasemonkey scripts
+# javascript_utility
+utility javascript functions, especially for greasemonkey scripts
