@@ -28,6 +28,14 @@ function startCancellableInterval(periodicFunc, intervalMs)
 }
 
 
+function logDocumentMutations()
+{  
+  (new MutationObserver(makeLogWrappedCallback( changes => console.debug(changes) ))).observe(
+    document,
+    {childList: true, subtree: true});
+}
+
+
 /*
 // ####################################################################################
 // EXAMPLES
